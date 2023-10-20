@@ -1,0 +1,220 @@
+.trello-img {
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 5rem !important;
+}
+
+.todo-img {
+    color: orange;
+    background-color: #fbe4bb;
+}
+
+.in-progress-img {
+    color: #0f5fc2;
+    background-color: #caf1ff;
+}
+
+.completed-img {
+    color: #00aa11;
+    background-color: #d3ffe7;
+}
+
+.birthday-img {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.birthday-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0.5rem;
+}
+
+.calendar-img {
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover;  */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img {
+    width: 120px;
+    height: 100px;
+    /* object-fit: cover;  */
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-radius {
+    border-radius: 15px;
+}
+
+.info1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 6 / 4;
+}
+
+.div2 {
+    grid-area: 1 / 4 / 6 / 6;
+}
+
+.container-middle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.time-card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.curr-time {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(100deg, #76daec 0%, #bd66ce 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    vertical-align: middle;
+}
+
+.curr-date {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    vertical-align: middle;
+}
+
+@media (max-width: 1052px) and (min-width: 896px) {
+    .curr-time {
+        font-size: 2rem;
+    }
+
+    .curr-date {
+        font-size: 1rem;
+        /* Adjust this value as needed */
+    }
+    
+}
+
+.event-card-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.event-col-title {
+    color: #616161;
+    padding-left: 10px;
+}
+
+.event-col-time {
+    color: #616161;
+    padding-left: 40px;
+}
+
+.event-col-date {
+    color: #616161;
+    padding-left: 60px;
+}
+
+.event-list-title {
+    padding-left: 20px;
+}
+
+.event-list {
+    padding-bottom: 20px;
+}
+
+/* .event-list-time {
+  padding-left: 20px;
+} */
+
+
+.birthday-card {
+    height: 100%;
+}
+
+.date-and-note-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-content: normal;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+.date-or-note {
+    display: block;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+   
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #b2b2b2;
+}
+
+.quick-note-card {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.8rem
+}
+
+.table-padding-time {
+    padding-left: 5px;
+}
+
+/* .dashboard-middle-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.middle-birthday-table {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.middle-date-card {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.middle-quick-note {
+    grid-area: 2 / 2 / 3 / 3;
+} */

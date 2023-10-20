@@ -1,0 +1,66 @@
+ /* 按钮样式 */
+ .water-button {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    width: 8rem;
+    border: 0.15em outset #bd66ce;;
+    border-radius: 1.5rem;
+    transition: 4s;
+}
+
+.water-button:before,
+.water-button:after {
+    content: "";
+    position: absolute;
+    top: -1.5em;
+    z-index: -1;
+    width: 200%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 40%;
+    background-color: rgba(228, 185, 252, 0.25);
+    transition: 4s;
+}
+
+.water-button:before {
+left: -80%;
+    transform: translate3d(0, 5em, 0) rotate(-340deg);
+}
+
+.water-button:after {
+right: -80%;
+    transform: translate3d(0, 5em, 0) rotate(390deg);
+}
+
+.water-button:hover,
+.button:focus {
+    color: white;
+}
+
+.water-button:hover:before,
+.water-button:hover:after,
+.water-button:focus:before,
+.water-button:focus:after {
+    transform: none;
+    background-color: rgba(140, 0, 255, 0.75);
+} 
+
+/* change color */
+.change-color-btn {
+    background-color: #5932EA !important;
+    color: white;
+    
+}
+.change-color-btn:hover, .change-color-btn:active, .change-color-btn:focus {
+    background-color: #4924d0 !important;
+    color: white;
+}
+
+.button-transparent {
+    border: none;
+    background-color: transparent;
+  }

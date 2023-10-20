@@ -1,0 +1,191 @@
+/* whole container of sideBar*/
+.div1 {
+    grid-area: 1 / 1 / 6 / 2;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    /* if sidebar content is taller than viewport */
+    z-index: 10;
+    /* to ensure the sidebar is on top */
+    margin-left: 1rem;
+}
+
+
+/* my circle */
+.my-circles {
+    display: flex;
+    align-items: center;
+    margin-left: -0.5rem;
+    margin-right: 1rem;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* icon */
+.title-img {
+    padding: 0;
+    width: 50px;
+
+}
+
+h5 {
+    font-size: 30px;
+    display: inline;
+    margin: 0;
+}
+
+/* btns */
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 2rem;
+
+}
+
+.btn {
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bar-btn {
+    width: 10rem;
+    text-align: start !important;
+}
+
+/* hover */
+.bar-btn:hover,
+.bar-btn:active {
+    background: #F2EFFF !important;
+}
+
+.btn .btn-icon {
+    vertical-align: middle;
+    margin-right: 0.5rem !important;
+    font-size: 1.3rem;
+}
+
+.btn span,
+.btn-icon {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    color: #9197B3;
+}
+
+@media (max-width: 600px) {
+    .div1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70px;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 11;
+        margin-left: 0rem;
+    }
+
+    /* let be center */
+    .my-circles {
+        margin-left: 0.5rem;
+    }
+
+    .btns {
+        align-items: center;
+    }
+
+    .small-bar-profile {
+        margin-left: 1rem !important;
+    }
+
+    /* display none content */
+    .btn span,
+    h5,
+    .user-name,
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+
+    /* bigger the bar-icon size */
+    .btn .btn-icon {
+        font-size: 1.5rem;
+        position: relative;
+
+    }
+
+    .bar-btn {
+        width: 3rem;
+    }
+
+}
+
+
+/* singl button */
+.remove-default-btn-style {
+    background-color: transparent !important;
+    /* Important to override Bootstrap styles */
+    color: #9197B3 !important;
+    /* Use the same color as normal state */
+    border-color: transparent !important;
+}
+
+.bar-icon {
+    size: 1rem;
+}
+
+/* drop down menu */
+.profile {
+    margin-top: 5rem;
+    margin-left: 0.5rem;
+}
+
+
+.avatar {
+    width: 35px;
+    height: 35px;
+}
+
+.user-name {
+    font-size: 20px;
+}
+
+.btn.active {
+    background-color: #5932EA !important;
+
+    .btn-icon {
+        color: white !important;
+    }
+}
+
+.btn.active span {
+    color: white;
+}
+
+/* This ensures that the user-name and the dropdown arrow are on the same line */
+.dropdown-toggle .user-name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* This will apply the desired background color to the dropdown arrow when on the profile page */
+.active-profile>a.dropdown-toggle::after {
+    content: '\25BC';
+    /* This is a downward pointing arrow symbol */
+    background-color: #5932EA;
+    /* Desired background color */
+    padding: 0.25em 0.5em;
+    /* Adjust padding as needed */
+    border-radius: 4px;
+    /* Optional: to give rounded corners to the background */
+    color: white;
+    /* Arrow color, adjust if needed */
+    margin-left: 5px;
+    /* Spacing between the username and arrow, adjust if needed */
+    border: 0;
+}

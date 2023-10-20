@@ -1,0 +1,11 @@
+/* this is for btn in login and signup page */
+/* todo: move to css for login and signup */
+.btn-lighter-secondary {
+    background-color: #b0b0b0; 
+    border-color: #b0b0b0;
+}
+
+.btn-lighter-secondary:hover, .btn-lighter-secondary:active, .btn-lighter-secondary:focus {
+    background-color: #9e9e9e; /* Slightly darker on hover, active, and focus states */
+    border-color: #9e9e9e;
+}

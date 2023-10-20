@@ -1,0 +1,79 @@
+{
+  "trello_summary": {
+    "total_todo": "1",
+    "total_in_progress": "2",
+    "total_completed": "3"
+  },
+
+  "birthdays": [
+    {
+      "id": "1",
+      "name": "Neil",
+      "age": "21",
+      "dob": "2023-10-20",
+      "avatar": "https://github.com/ITProject-Thu-12pm/Assets/blob/main/avatar.png?raw=true"
+    },
+    {
+      "id": "2",
+      "name": "Bill",
+      "age": "20",
+      "dob": "2023-10-21",
+      "avatar": "https://github.com/ITProject-Thu-12pm/Assets/blob/main/avatar.png?raw=true"
+    },
+    {
+      "id": "3",
+      "name": "Chloe",
+      "age": "22",
+      "dob": "2023-10-23",
+      "avatar": "https://github.com/ITProject-Thu-12pm/Assets/blob/main/avatar.png?raw=true"
+    },
+    {
+      "id": "5",
+      "name": "Chloe",
+      "age": "22",
+      "dob": "2023-10-23",
+      "avatar": "https://github.com/ITProject-Thu-12pm/Assets/blob/main/avatar.png?raw=true"
+    },
+    {
+      "id": "6",
+      "name": "Chloe",
+      "age": "22",
+      "dob": "2023-10-23",
+      "avatar": "https://github.com/ITProject-Thu-12pm/Assets/blob/main/avatar.png?raw=true"
+    },
+    {
+      "id": "4",
+      "name": "Emily",
+      "age": "21",
+      "dob": "2023-10-24",
+      "avatar": "https://github.com/ITProject-Thu-12pm/Assets/blob/main/avatar.png?raw=true"
+    }
+  ],
+
+  "events": [
+    {
+        "id": "1",
+        "title": "Weekly Group Meeting",
+        "date": "2023-10-20",
+        "time": "10:00AM - 11:00AM"
+    },
+    {
+        "id": "2",
+        "title": "Dinner with James",
+        "date": "2023-10-20",
+        "time": "5:00PM - 7:00PM"
+    },
+    {
+        "id": "3",
+        "title": "IT Class",
+        "date": "2023-10-20",
+        "time": "12:00AM - 14:00PM"
+    },
+    {
+        "id": "4",
+        "title": "Meeting with Client",
+        "date": "2023-10-20",
+        "time": "16:00PM - 20:00PM"
+    }
+  ]
+}

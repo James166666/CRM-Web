@@ -1,0 +1,64 @@
+
+.parent {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;  /* 250px for the fixed sidebar and the rest for the content */
+    margin-left: 1rem;
+}
+
+.profile-btns {
+    gap: 2rem;;
+    justify-content: flex-end;
+}
+
+.profile-btns .btn {
+    width: 10rem;
+}
+
+.btn-edit {
+    background-color: #5932EA;
+    
+}
+.btn-edit:hover {
+    background-color: #4924d0;
+}
+
+.form-control {
+    padding: 0.7rem 0.75rem;
+}
+
+.reset-pass {
+    border: var(--bs-border-width) solid var(--bs-border-color) !important;
+    border-radius: var(--bs-border-radius);
+    background-color: #F6FAFD !important;
+    color: #7E92A2;
+    text-decoration: none;
+}
+
+.input-profile[disabled], 
+.input-profile[readonly]{
+    background-color: #F6FAFD;
+}
+
+input-profile[disabled] + label, .input-profile[readonly] + label {
+    background-color: #F6FAFD;
+}
+
+@media (max-width: 600px) {
+    .parent {
+        grid-template-columns: 60px 1fr;  /* Adjusted to the new width of div1 */
+    }
+
+    .div2 {
+        grid-column: 2;  /* Ensuring it occupies the second column */
+        margin-left: 1rem;  /* Adjusted to the new width of div1 */
+    }
+}
+
+.profile-avatar {
+    vertical-align: middle;
+    outline: 5px outset rgba(111,0,164,0.63);
+    outline-offset: 0px;
+    width: 140px;
+    height: 140px;
+}

@@ -1,0 +1,169 @@
+.trello-container{
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+/* header */
+.trello-header-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.trello-header-title {
+   flex: 0;
+   min-width: 15rem;
+   font-size: 2.5rem;
+}
+
+.board-add-list {
+    height: 3rem;
+    width: 12rem;
+    border-radius: 15px;
+}
+
+.board-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+    
+}
+
+@media (max-width: 700px) {
+    .board-container {
+        margin: 1rem;
+        justify-content: center;
+    }
+
+    .trello-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+    }
+
+    .trello-header-title {
+        min-width: 12rem;
+        margin-left: 1rem;
+     }
+
+}
+
+@media (max-width: 860px) {
+    .row {
+        
+        width: 15rem;
+    }
+}
+
+.column-container {
+    display: flex;
+    min-width: 16rem;
+    flex-direction: column;
+    background-color: #e2e4e6;
+    border-radius: 10px;
+    padding: 1rem;
+
+
+}
+
+.test-1 {
+    flex: 0;
+}
+
+.column-title {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #cfd8dc;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.column-edit-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid #cfd8dc;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    border: none;
+    background: none;
+    width: 100%;
+    outline: none;
+}
+
+.column-add-card {
+    border-radius: 10px;
+
+}
+
+.task-column {
+    /* ensure empty col can be dropped*/
+    min-height: 15rem;
+    padding: 0;
+
+    max-height: 28rem;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 5rem;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9, 45, 66, .25);
+}
+
+.task-delete-icon-container {
+    /* remove default setting of mui */
+    background-color: transparent !important;
+    padding: 0 !important;
+    align-self: flex-end !important;
+    /* position */
+    position: absolute !important;
+    top: 0.3rem;
+    /* transport */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.task-delete-icon-container:hover {
+    opacity: 1;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-priority {
+    font-weight: 600;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.priority-high {
+    background: rgba(255, 0, 0, 0.684);
+}
+
+.priority-medium {
+    background-color: rgba(255, 166, 0, 0.684);
+}
+
+.priority-low {
+    background-color: rgba(0, 128, 0, 0.684);
+}
